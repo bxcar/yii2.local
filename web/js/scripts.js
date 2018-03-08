@@ -1,1 +1,2 @@
-alert('hello');
+// alert('hello');
+$('.container').append('<p>SHOW!!!</p>');
