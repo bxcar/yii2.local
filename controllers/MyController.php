@@ -8,14 +8,15 @@
 
 namespace app\controllers;
 
-
-use yii\base\Controller;
-
-class MyController extends Controller {
+class MyController extends AppController {
     public function actionIndex() {
         $hi = 'Hello, World!';
         $names = ['Petrov', 'Ivanov', 'Sidorov'];
         $id = $_GET['id'];
         return $this->render('index', compact('hi', 'names', 'id'));
+    }
+
+    public function actionBlogPost() {
+        return 'Blog Post';
     }
 }

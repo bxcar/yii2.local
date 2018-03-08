@@ -1,9 +1,10 @@
 <?php
 namespace app\controllers\admin;
 
-use yii\base\Controller;
 
-class UserController extends Controller {
+use app\controllers\AppController;
+
+class UserController extends AppController {
     public function actionIndex() {
         return $this->render('index');
     }
