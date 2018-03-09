@@ -5,6 +5,9 @@
 <?php $this->endBlock(); ?>
 
 <h1>Show Action</h1>
+
+<?php debug($cats); ?>
+
 <button class="btn btn-success" id="btn">Click me...</button>
 <?php //$this->registerJsFile('@web/js/scripts.js', ['depends' => 'yii\web\YiiAsset']); ?>
 <?php //$this->registerJs("$('.container').append('<p>SHOW!!!</p>');", \yii\web\View::POS_LOAD); ?>
