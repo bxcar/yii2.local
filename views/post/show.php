@@ -1,16 +1,20 @@
-<?php //$this->title = 'Одна статья'; ?>
+<?php use app\components\MyWidget; ?>
 
 <?php $this->beginBlock('block1'); ?>
     <h1><?= $this->title; ?></h1>
 <?php $this->endBlock(); ?>
 
     <h1>Show Action</h1>
+<?php //echo MyWidget::widget(['name' => null]); ?>
+<?php MyWidget::begin(); ?>
+    <h1>привет, мир!</h1>
+<?php MyWidget::end(); ?>
 
 <?php //debug($cats); ?>
 <?php //echo count($cats[0]->products); ?>
 <?php //debug($cats); ?>
 
-<?php foreach ($cats as $cat) {
+<?php /*foreach ($cats as $cat) {
     echo '<ul>';
     echo '<li>' . $cat['title'] . '</li>';
     $products = $cat['products'];
@@ -20,7 +24,7 @@
         echo '</ul>';
     }
     echo '</ul>';
-} ?>
+} */?>
 
     <button class="btn btn-success" id="btn">Click me...</button>
 <?php //$this->registerJsFile('@web/js/scripts.js', ['depends' => 'yii\web\YiiAsset']); ?>
