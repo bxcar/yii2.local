@@ -26,11 +26,20 @@ class PostController extends AppController {
             return $this->debug(Yii::$app->request->post());
         }
 
+//        $post = TestForm::findOne(3);
+        /*$post->email = '2@2.com';
+        $post->save();*/
+//        $post->delete();
+//        return $this->debug($post);
+
         $model = new TestForm();
 //        $model->name = 'Автор';
 //        $model->email = 'mail@mail.com';
 //        $model->text = 'Текст сообщения';
 //        $model->save();
+
+//        TestForm::deleteAll(['>', 'id', 5]);
+//        TestForm::deleteAll();
 
         if ($model->load(Yii::$app->request->post())) {
             if ($model->save()) {
