@@ -5,11 +5,6 @@
 <?php $this->endBlock(); ?>
 
     <h1>Show Action</h1>
-    <!--<ul>
-        <?php /*foreach ($cats as $cat) {
-            echo '<li>' . $cat->title . '</li>';
-        } */ ?>
-    </ul>-->
 
 <?php //debug($cats); ?>
 <?php //echo count($cats[0]->products); ?>
