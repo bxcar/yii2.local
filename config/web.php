@@ -8,9 +8,10 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
 //    'layout' => 'basic',
+    'language' => 'ru',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
     ],
     'components' => [
         'request' => [
